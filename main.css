@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header .header__top{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+.header .header__top {
+    background-color: #f5f5f5;
+}
+.header .header__top .header__top__bar{
+    padding : 14px 50%;
+  
+}
+.header .header__top .fa-list {
+    font-size: 20px;  
+    cursor: pointer;
+}
+.header .header__top .header__top__content .menu__header{
+    justify-content: center;
+}
+.header .header__top .header__top__content .menu__header ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 14px 25px;
+    font-family: "Unna",serif;
+}
+.header .header__top .header__top__content .menu__header ul li a{
+    font-size: 15px;
+    color: #111111;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.header .header__top .header__top__content .menu__header ul li a:hover{
+    color: #f4952f;
+}
+.header .header__top .header__top__content .menu__header ul li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top:32px;
+    background-color: #f4952f;
+    display: block;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+.header .header__top .header__top__content .menu__header ul li a:hover::after{
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+.header .header__top__search{
+    padding: 14px 40%;
+    cursor: pointer;
+}
+.header .header__top__search .fa-search{
+    font-size: 20px;
+}
+.header .header__container { 
+    height: 150px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.header .header__container .container__btn { 
+    padding : 50px 70%;
+}
+.header .header__container .container__btn .button {
+    background-color: #ffff;
+    border: 2px solid #f4952f;
+    border-radius: 6px;
+    padding: 8px 25px 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font: "Nunito Sans",serif;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.header .header__container .container__btn .button:hover{
+    background-color: #f4952f;
+    color: #ffff;
+    border-radius: 15px;
+}
+.header .header__container  .container__title{
+    padding: 40px 27%;
+    cursor: pointer;
+}
+.header .header__container .social__icons i{
+    padding: 50px 3px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+/*section introduce*/ 
+.menu__items {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 300px 300px;
+    grid-gap: 5px 5px;
+}
+.feature{
+    position: relative;
+}
+.menu__items .feature:nth-child(1){
+    grid-row: 1/3;
+}
+.menu__items .feature:nth-child(4) {
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+.menu__items  .feature img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.menu__items .feature .feature_date{
+    background: rgba(0, 0, 0, 0.3);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    text-align: center;
+    bottom: 25px;
+    left: 10px;
+}
+.menu__items .feature .feature_date h3{
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 600;
+}
+.menu__items .feature .feature_date h3 span {
+    opacity: 0.5;
+    display: block;
+    text-transform: uppercase;
+    font-family: "Nunito Sans",serif;
+}
+.menu__items .feature .feature__specify .label {
+    position: absolute;
+    bottom: 120px;
+    left: 145px;
+}
+.menu__items .feature .feature__specify .label li{
+    list-style: none;
+    display: inline-block;
+    color: #f4952f;
+    font-weight: 700;
+    font-size: 20px;
+    margin-inline-start: 15px;
+}
+.menu__items .feature .feature__specify .label li:nth-child(1)::after{
+    content: "|";
+    color: #FFFFFF;
+    position: absolute;
+    left: 85px;
+}
+.menu__items .feature .feature__specify h4{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 50px;
+    left: 160px;
+    font-size: 25px;
+}
+.menu__items .feature .feature__specify .widget{
+    position: absolute;
+    bottom: 20px;
+    left: 151px;
+}
+.menu__items .feature .feature__specify .widget li{
+    list-style: none;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    margin-inline-start: 10px;
+}
+.menu__items .feature .feature__specify h5{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 60px;
+    left: 160px;
+    font-size: 15px;
+}
+.menu__items .feature:nth-child(2)  .label
+{
+    bottom: 110px;
+}
+.menu__items .feature:nth-child(3)  .label
+{
+    bottom: 110px;
+}
+.menu__items .feature:nth-child(4)  .label
+{
+    bottom: 110px;
+}
+.menu__items .feature:nth-child(2) .widget {
+    bottom: 30px;
+}
+.menu__items .feature:nth-child(3) .widget {
+    bottom: 30px;
+}
+.menu__items .feature:nth-child(4) .widget {
+    bottom: 30px;
+}
+.menu__items .btn__nav .btn__prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.3);
+    font-size:20px;
+    color: #ffff;
+    border: none;
+}
+.menu__items .btn__nav .btn__next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.3);
+    font-size:20px;
+    color: #ffff;
+    border: none;
+}
